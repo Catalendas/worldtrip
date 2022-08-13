@@ -19,8 +19,8 @@ export default function Infos() {
 
             <Flex flexDirection="column" justify="center" align={["flex-start", "flex-start", "center"]}>
                 <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">27</Heading>
-                <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.7000">
-                    Cidades +100
+                <Flex fontWeight="600" fontSize={["md", "xl"]} color="gray.7000">
+                    <Text>Cidades +100</Text>
 
                     <Popover>
                         <PopoverTrigger>
@@ -32,11 +32,11 @@ export default function Infos() {
                             <PopoverArrow bg="gray.700"/>
                             <PopoverCloseButton />
                             <PopoverBody fontWeight="400" fontSize="lg">
-                            Berlim capital da Alemanha, Hamburgo, Munique, Colônia, Frankfur, Dusseldorf, Hanôver 
+                            Berlim (capital da Alemanha), Hamburgo, Munique, Colônia, Frankfur, Dusseldorf, Hanôver 
                             </PopoverBody>
                         </PopoverContent>
                     </Popover>
-                </Text>
+                </Flex>
                 
             </Flex>
         </Flex>
