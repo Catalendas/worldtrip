@@ -11,15 +11,17 @@ export function Slider({continents}: ContinentProps) {
         <Flex w="100%" maxW="1240" mx="auto" mb={["5", "10"]} h={["250px", "450px"]}>
             <Swiper
                 slidesPerView={1}
-                navigation
-                pagination={{clickable: true}}
+                navigation={true}
+                pagination={true}
+                keyboard={true}
+                modules={[Navigation, Pagination]}
                 autoplay={{
                     delay: 4000
                 }}
                 style={{ width: '100%', flex: '1'}}
             >
              {continents.map( continents => (
-                    <SwiperSlide key={continents.image}>
+                    <SwiperSlide key={continents.image} >
                     <Flex
                         w="100%"
                         h="100%"
