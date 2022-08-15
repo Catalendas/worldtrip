@@ -40,9 +40,7 @@ export default function Continent({continent}: ContinentPropsContent) {
 
     return(
         <>       
-            <Head>
-                <title> {continent.data.title} | worldtrip</title>
-            </Head>
+            
 
             <Flex direction="column">
                 <Header />
