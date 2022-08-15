@@ -16,15 +16,19 @@ export default function Citys({continent}: ContinentPropsContent) {
                 justifyContent="center" 
                 px={["30px", "0"]}
             >
-                {continent.cities100.map(city => (
-                    <City 
+               {continent.data.cities100.map(city => {
+                    return(
+                        <City 
                         key={city.city}
                         name={city.city}
                         country={city.country}
                         flag={city.flag}
                         thumbnail={city.thumbnail}
                     />
-                ))}
+                    )
+                }
+                    
+                )} 
                
             </Grid>
         </>

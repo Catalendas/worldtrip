@@ -1,24 +1,25 @@
 import { Flex, Heading, Icon, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverTrigger, Text } from "@chakra-ui/react";
 import { RiInformationLine } from "react-icons/ri";
+import { ContinentPropsContent } from "../../pages/continent/[slug]";
 
-export default function Infos() {
+export default function Infos({continent}: ContinentPropsContent) {
     return(
         <Flex
             align="center"
             justifyContent="space-between" 
         >
             <Flex flexDirection="column" justify="center" align={["flex-start", "flex-start", "center"]}>
-                <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">50</Heading>
+                <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">{continent.data.contries}</Heading>
                 <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.7000">Países</Text>
             </Flex>
 
             <Flex flexDirection="column" justify="center" align={["flex-start", "flex-start", "center"]}>
-                <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">60</Heading>
+                <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">{continent.data.languages}</Heading>
                 <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.7000">Linguas</Text>
             </Flex>
 
             <Flex flexDirection="column" justify="center" align={["flex-start", "flex-start", "center"]}>
-                <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">27</Heading>
+                <Heading fontSize={["2xl", "5xl"]} color="yellow" fontWeight="500">{continent.data.cities}</Heading>
                 <Flex fontWeight="600" fontSize={["md", "xl"]} color="gray.7000">
                     <Text>Cidades +100</Text>
 
@@ -32,7 +33,7 @@ export default function Infos() {
                             <PopoverArrow bg="gray.700"/>
                             <PopoverCloseButton />
                             <PopoverBody fontWeight="400" fontSize="lg">
-                            Berlim (capital da Alemanha), Hamburgo, Munique, Colônia, Frankfur, Dusseldorf, Hanôver 
+                            {continent.data.cities_list}
                             </PopoverBody>
                         </PopoverContent>
                     </Popover>

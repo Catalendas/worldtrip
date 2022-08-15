@@ -19,6 +19,8 @@
     "@prismicio/types": "^0.2.2",
     "framer-motion": "^7.0.0",
     "next": "12.2.4",
+    "next-progressbar": "^1.0.0",
+    "nextjs-progressbar": "^0.0.14",
     "prismic-dom": "^2.2.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",

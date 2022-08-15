@@ -15,10 +15,10 @@ export default function Content({continent}: ContinentPropsContent) {
                 color="gray.700"
                 textAlign="justify"
             >
-                {continent.description}
+                {continent.data.description}
             </Text>
 
-            <Infos/>
+            <Infos continent={continent}/>
         </Grid>
     )
 }

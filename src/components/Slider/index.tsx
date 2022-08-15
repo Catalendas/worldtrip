@@ -19,7 +19,7 @@ export function Slider({continents}: ContinentProps) {
                 style={{ width: '100%', flex: '1'}}
             >
              {continents.map( continents => (
-                    <SwiperSlide key={continents.title}>
+                    <SwiperSlide key={continents.image}>
                     <Flex
                         w="100%"
                         h="100%"

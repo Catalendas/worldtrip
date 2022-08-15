@@ -10,7 +10,7 @@ export function ContinentBanner ({continent}: ContinentPropsContent) {
             h={["150px", "300px", "500px"]}
             px={["0", "0", "36"]}
             pt={["0", "0", "72"]}
-            bgImage={`url('${continent.bannerimage}')`}
+            bgImage={`url('${continent.data.bannerimage}')`}
             bgPosition="center"
             bgRepeat="no-repeat"
             bgSize="cover"
@@ -22,7 +22,7 @@ export function ContinentBanner ({continent}: ContinentPropsContent) {
                 fontWeight="500"
                 fontSize={["1.75rem", "5xl"]}
                 textAlign={["center", "left"]}
-            >{continent.title}</Heading>
+            >{continent.data.title}</Heading>
         </Flex>
     )
 }
