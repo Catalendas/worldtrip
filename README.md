@@ -2,12 +2,14 @@
 
 Esse projeto foi desenvolvido, proposto pela rocketseat em uma das trilhas, o desafio foi criar um site do zero utilizando o layout do figma usando apenas o Chakra-ui
 para a estilizanção do projeto. Nesse projeto acrencentei tambem algumas coisas a mais.
+Para ter acesso as outras paginas clique nos banners.
+O projeto está totalmente responsivo.
 
 ## interface do projeto 
 
 ![worldtrip pagina inicial](https://user-images.githubusercontent.com/82763928/184650520-01f83c18-5d96-4a6f-b4fe-4632085053cd.gif)
 
-ou acesse [wordtrip](https://worldtrip-8gm60smcf-catalendas.vercel.app/)
+###ou acesse: [wordtrip](https://worldtrip-8gm60smcf-catalendas.vercel.app/)
 
 ### Projeto em funcionamento
 O Prismic ajuda a armazenar as informações do site e são trazidos por uma API.
